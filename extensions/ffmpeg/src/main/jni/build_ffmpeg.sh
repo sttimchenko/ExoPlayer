@@ -72,31 +72,31 @@ make clean
 make -j$JOBS
 make install-libs
 make clean
-./configure \
-    --libdir=android-libs/x86 \
-    --arch=x86 \
-    --cpu=i686 \
-    --cross-prefix="${TOOLCHAIN_PREFIX}/i686-linux-android16-" \
-    --nm="${TOOLCHAIN_PREFIX}/llvm-nm" \
-    --ar="${TOOLCHAIN_PREFIX}/llvm-ar" \
-    --ranlib="${TOOLCHAIN_PREFIX}/llvm-ranlib" \
-    --strip="${TOOLCHAIN_PREFIX}/llvm-strip" \
-    --disable-asm \
-    ${COMMON_OPTIONS}
-make -j$JOBS
-make install-libs
-make clean
-./configure \
-    --libdir=android-libs/x86_64 \
-    --arch=x86_64 \
-    --cpu=x86_64 \
-    --cross-prefix="${TOOLCHAIN_PREFIX}/x86_64-linux-android21-" \
-    --nm="${TOOLCHAIN_PREFIX}/llvm-nm" \
-    --ar="${TOOLCHAIN_PREFIX}/llvm-ar" \
-    --ranlib="${TOOLCHAIN_PREFIX}/llvm-ranlib" \
-    --strip="${TOOLCHAIN_PREFIX}/llvm-strip" \
-    --disable-asm \
-    ${COMMON_OPTIONS}
-make -j$JOBS
-make install-libs
-make clean
+#./configure \
+#    --libdir=android-libs/x86 \
+#    --arch=x86 \
+#    --cpu=i686 \
+#    --cross-prefix="${TOOLCHAIN_PREFIX}/i686-linux-android16-" \
+#    --nm="${TOOLCHAIN_PREFIX}/llvm-nm" \
+#    --ar="${TOOLCHAIN_PREFIX}/llvm-ar" \
+#    --ranlib="${TOOLCHAIN_PREFIX}/llvm-ranlib" \
+#    --strip="${TOOLCHAIN_PREFIX}/llvm-strip" \
+#    --disable-asm \
+#    ${COMMON_OPTIONS}
+#make -j$JOBS
+#make install-libs
+#make clean
+#./configure \
+#    --libdir=android-libs/x86_64 \
+#    --arch=x86_64 \
+#    --cpu=x86_64 \
+#    --cross-prefix="${TOOLCHAIN_PREFIX}/x86_64-linux-android21-" \
+#    --nm="${TOOLCHAIN_PREFIX}/llvm-nm" \
+#    --ar="${TOOLCHAIN_PREFIX}/llvm-ar" \
+#    --ranlib="${TOOLCHAIN_PREFIX}/llvm-ranlib" \
+#    --strip="${TOOLCHAIN_PREFIX}/llvm-strip" \
+#    --disable-asm \
+#    ${COMMON_OPTIONS}
+#make -j$JOBS
+#make install-libs
+#make clean

@@ -56,7 +56,7 @@ android {
     productFlavors {
         noDecoderExtensions {
             dimension "decoderExtensions"
-            buildConfigField "boolean", "USE_DECODER_EXTENSIONS", "false"
+            buildConfigField "boolean", "USE_DECODER_EXTENSIONS", "true"
         }
         withDecoderExtensions {
             dimension "decoderExtensions"
@@ -80,10 +80,10 @@ dependencies {
     implementation project(modulePrefix + 'extension-cronet')
     implementation project(modulePrefix + 'extension-ima')
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-av1')
-    withDecoderExtensionsImplementation project(modulePrefix + 'extension-ffmpeg')
+    implementation project(modulePrefix + 'extension-ffmpeg')
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-flac')
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-opus')
-    withDecoderExtensionsImplementation project(modulePrefix + 'extension-vp9')
+    implementation project(modulePrefix + 'extension-vp9')
     withDecoderExtensionsImplementation project(modulePrefix + 'extension-rtmp')
 }
 

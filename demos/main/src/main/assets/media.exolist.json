@@ -1,5 +1,22 @@
 [
   {
+    "name": "Custom samples",
+    "samples": [
+      {
+        "name": "Original video",
+        "uri": "/data/data/com.google.android.exoplayer2.demo/files/original_video.mp4"
+      },
+      {
+        "name": "Original video: flac audio",
+        "uri": "/data/data/com.google.android.exoplayer2.demo/files/original_video_flac.mp4"
+      },
+      {
+        "name": "Original video: vp9",
+        "uri": "/data/data/com.google.android.exoplayer2.demo/files/original_video_vp9.mp4"
+      }
+    ]
+  },
+  {
     "name": "Clear DASH",
     "samples": [
       {
